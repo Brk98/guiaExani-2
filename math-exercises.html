@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Math Exercises</title>
+    <style>
+        .toggle-section {
+            display: none;
+        }
+        .content-margin {
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+        .number-line-container {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 40px 20px;
+            margin: 20px 0;
+        }
+        
+        .number-line {
+            position: relative;
+            height: 2px;
+            background: black;
+            margin: 50px 40px;
+            min-width: 600px;
+        }
+        
+        .arrow-left, .arrow-right {
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background: black;
+        }
+        
+        .arrow-left {
+            left: -2px;
+            transform: rotate(45deg);
+        }
+        
+        .arrow-left::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background: black;
+            transform: rotate(-90deg);
+            transform-origin: left;
+        }
+        
+        .arrow-right {
+            right: -2px;
+            transform: rotate(-45deg);
+        }
+        
+        .arrow-right::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background: black;
+            transform: rotate(90deg);
+            transform-origin: right;
+        }
+        
+        .marks {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .marks span {
+            position: relative;
+            padding-top: 20px;
+        }
+        
+        .marks span::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 10px;
+            background: black;
+            transform: translateX(-50%);
+        }
+        
+        .points {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+        }
+        
+        .point {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: black;
+            border-radius: 50%;
+            transform: translateY(28px);
+        }
+        
+        .point::after {
+            content: attr(title);
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0.2em 0.4ex;
+            text-align: center;
+        }
+        .fraction > span {
+            display: block;
+            padding-top: 0.15em;
+        }
+        .fraction span.numerator {
+            border-bottom: 1px solid;
+        }
+        .fraction span.denominator {
+            border-top: 1px solid;
+        }
+        
+        .exercise-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .option-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #009879;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .option-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .option-btn.selected {
+            background: #009879;
+            color: white;
+        }
+        
+        .check-answer-btn {
+            padding: 12px 24px;
+            background: #009879;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .check-answer-btn:hover {
+            background: #007f66;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .feedback {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        
+        .feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .question-text {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .test-title {
+            color: #009879;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #009879;
+            cursor: pointer;
+        }
+
+        .test-title:hover {
+            color: #007f66;
+        }
+
+        .ai-btn:hover {
+            background: #357abd !important;
+        }
+
+        .ai-explanation {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .ai-explanation h4 {
+            color: #4a90e2;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Matemáticas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Matemáticas</a></li>
+        </ul>
+    </nav>
+
+    <div id="content"></div>
+
+    <script>
+        async function getApiKey() {
+            try {
+                const response = await fetch('/.netlify/functions/getApiKey');
+                const data = await response.json();
+                return data.apiKey;
+            } catch (error) {
+                console.error('Error getting API key:', error);
+                throw error;
+            }
+        }
+
+        async function obtenerRespuesta(ejercicio) {
+            const apiKey = await getApiKey();
+            const response = await fetch('https://api.openai.com/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    model: "gpt-3.5-turbo", // Use "gpt-3.5-turbo" if you don't have GPT-4 access
+                    messages: [{
+                        role: "user",
+                        content: `Por favor explica de manera simple y paso a paso cómo resolver este ejercicio de matemáticas: ${ejercicio} Estas son las opciones: ${JSON.stringify(ejercicio.options)})}`
+                    }],
+                    temperature: 0.7,
+                    max_tokens: 500
+                })
+            });
+            
+            const data = await response.json();
+            return data.choices[0].message.content;
+        }
+
+        async function loadSections() {
+            try {
+                const response = await fetch('sectionsMath.json');
+                const sections = await response.json();
+                const contentDiv = document.getElementById('content');
+                contentDiv.classList.add('content-margin');
+                
+                // Load regular sections first
+                sections.forEach(section => {
+                    const sectionElement = document.createElement('div');
+                    const sectionTitle = document.createElement('h2');
+                    sectionTitle.textContent = `→ ${section.title}`;
+                    sectionTitle.onclick = () => toggleSection(section.title);
+                    sectionElement.appendChild(sectionTitle);
+
+                    const sectionContent = document.createElement('div');
+                    sectionContent.id = section.title;
+                    sectionContent.className = 'toggle-section';
+                    sectionContent.innerHTML = `<p>${section.content}</p>`;
+
+                    section.subsections.forEach(subsection => {
+                        const subsectionElement = document.createElement('div');
+                        const subsectionTitle = document.createElement('h3');
+                        subsectionTitle.textContent = `→ ${subsection.title}`;
+                        subsectionTitle.onclick = () => toggleSubsection(subsection.title);
+                        subsectionElement.appendChild(subsectionTitle);
+
+                        const subsectionContent = document.createElement('div');
+                        subsectionContent.id = subsection.title;
+                        subsectionContent.className = 'toggle-section';
+
+                        if (subsection.content.includes('<table')) {
+                            subsectionContent.innerHTML = subsection.content;
+                        } else {
+                            subsectionContent.innerHTML = subsection.content;
+                        }
+
+                        subsectionElement.appendChild(subsectionContent);
+                        sectionContent.appendChild(subsectionElement);
+                    });
+
+                    sectionElement.appendChild(sectionContent);
+                    contentDiv.appendChild(sectionElement);
+                });
+
+                // Add interactive exercises section at the end
+                const exercisesTitle = document.createElement('h2');
+                exercisesTitle.textContent = '→ Ejercicios Interactivos';
+                exercisesTitle.onclick = () => toggleSection('interactive-exercises');
+                
+                const exercisesContent = await initializeExercises();
+                
+                contentDiv.appendChild(exercisesTitle);
+                contentDiv.appendChild(exercisesContent);
+
+            } catch (error) {
+                console.error('Error loading sections:', error);
+            }
+        }
+
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+
+        function toggleSubsection(subsectionId) {
+            const subsection = document.getElementById(subsectionId);
+            if (subsection.style.display === "none" || subsection.style.display === "") {
+                subsection.style.display = "block";
+            } else {
+                subsection.style.display = "none";
+            }
+        }
+
+        async function loadExercises() {
+            try {
+                const response = await fetch('math-tests.json');
+                const data = await response.json();
+                return data.sections;
+            } catch (error) {
+                console.error('Error loading exercises:', error);
+                return [];
+            }
+        }
+
+        async function initializeExercises() {
+            const sections = await loadExercises();
+            const exercisesSection = document.createElement('div');
+            exercisesSection.id = 'interactive-exercises';
+            exercisesSection.className = 'toggle-section';
+            
+            sections.forEach(section => {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'test-section';
+                
+                // Create section title
+                const sectionTitle = document.createElement('h3');
+                sectionTitle.textContent = `→ ${section.title}`;
+                sectionTitle.className = 'test-title';
+                
+                const sectionContent = document.createElement('div');
+                sectionContent.className = 'toggle-section';
+                sectionContent.id = `section-${section.title}`;
+                
+                // Add click handler to title
+                sectionTitle.onclick = () => toggleSection(sectionContent.id);
+                
+                // Create exercises for this section
+                section.exercises.forEach(exercise => {
+                    const exerciseElement = createExerciseElement(exercise);
+                    sectionContent.appendChild(exerciseElement);
+                });
+                
+                sectionDiv.appendChild(sectionTitle);
+                sectionDiv.appendChild(sectionContent);
+                exercisesSection.appendChild(sectionDiv);
+            });
+            
+            return exercisesSection;
+        }
+
+        function createExerciseElement(exercise) {
+            const container = document.createElement('div');
+            container.className = 'exercise-container';
+            
+            // Replace \sqrt with √ in the question
+            const formattedQuestion = exercise.question.replace(/\\sqrt{?(\d+)}?/g, '√$1');
+            
+            const question = document.createElement('p');
+            question.className = 'question-text';
+            question.innerHTML = formattedQuestion;
+            container.appendChild(question);
+            
+            const optionsContainer = document.createElement('div');
+            exercise.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'option-btn';
+                // Replace \sqrt with √ in the options
+                const formattedOption = option.text.replace(/\\sqrt{?(\d+)}?/g, '√$1');
+                button.innerHTML = formattedOption;
+                button.onclick = () => {
+                    optionsContainer.querySelectorAll('.option-btn').forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    button.classList.add('selected');
+                };
+                optionsContainer.appendChild(button);
+            });
+            container.appendChild(optionsContainer);
+            
+            const checkButton = document.createElement('button');
+            checkButton.className = 'check-answer-btn';
+            checkButton.textContent = 'Verificar respuesta';
+            checkButton.onclick = () => {
+                const selectedOption = optionsContainer.querySelector('.selected');
+                if (!selectedOption) {
+                    alert('Por favor selecciona una respuesta');
+                    return;
+                }
+                
+                const selectedIndex = Array.from(optionsContainer.children).indexOf(selectedOption);
+                const isCorrect = exercise.options[selectedIndex].isCorrect;
+                
+                // Remove previous feedback if exists
+                const oldFeedback = container.querySelector('.feedback');
+                if (oldFeedback) {
+                    container.removeChild(oldFeedback);
+                }
+                
+                // Show feedback
+                const feedback = document.createElement('div');
+                feedback.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+                feedback.innerHTML = isCorrect ? 
+                    '¡Correcto!' : 
+                    `Incorrecto. ${exercise.explanation}`;
+                container.appendChild(feedback);
+            };
+            container.appendChild(checkButton);
+            
+            // Add AI Explanation button
+            const aiButton = document.createElement('button');
+            aiButton.className = 'check-answer-btn ai-btn';
+            aiButton.style.marginLeft = '10px';
+            aiButton.style.backgroundColor = '#4a90e2';
+            aiButton.textContent = 'Explícame con IA';
+            
+            aiButton.onclick = async () => {
+                aiButton.disabled = true;
+                aiButton.textContent = 'Cargando...';
+                
+                try {
+                    const explanation = await obtenerRespuesta(exercise.question);
+                    
+                    let aiExplanation = container.querySelector('.ai-explanation');
+                    if (!aiExplanation) {
+                        aiExplanation = document.createElement('div');
+                        aiExplanation.className = 'ai-explanation';
+                        container.appendChild(aiExplanation);
+                    }
+                    
+                    aiExplanation.innerHTML = `
+                        <h4>Explicación de IA:</h4>
+                        <p>${explanation}</p>
+                    `;
+                    
+                } catch (error) {
+                    console.error('Error fetching AI explanation:', error);
+                    alert('Error al obtener la explicación. Por favor intenta de nuevo.');
+                } finally {
+                    aiButton.disabled = false;
+                    aiButton.textContent = 'Explícame con IA';
+                }
+            };
+            
+            container.appendChild(aiButton);
+            
+            return container;
+        }
+
+        loadSections();
+    </script>
+</body>
+</html>
