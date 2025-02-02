@@ -1,0 +1,117 @@
+{
+  "sections": [
+    {
+      "title": "Test 1 (Guía): Reactivos de la unidad 1",
+      "exercises": [
+        {
+          "id": 1,
+          "question": "¿Cuál de las siguientes expresiones, es un número racional?",
+          "options": [
+            {
+              "text": "\\sqrt{3}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\sqrt{5}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\sqrt{9}",
+              "isCorrect": true
+            },
+            {
+              "text": "2\\pi",
+              "isCorrect": false
+            },
+            {
+              "text": "\\sqrt{2}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Un número racional es aquel que puede expresarse como el cociente de dos números enteros."
+        },
+        {
+          "id": 2,
+          "question": "¿Cuál de las siguientes expresiones, es un número irracional?",
+          "options": [
+            {
+              "text": "0.\\overline{5}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\sqrt{5}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{1}{2}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\sqrt{16}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{\\sqrt{25}}{5}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Un número irracional es aquel que no puede expresarse como el cociente de dos números enteros."
+        },
+        {
+          "id": 3,
+          "question": "Simplificando la expresión 15-7(2-11) se obtiene:",
+          "options": [
+            {
+              "text": "68",
+              "isCorrect": false
+            },
+            {
+              "text": "48",
+              "isCorrect": false
+            },
+            {
+              "text": "78",
+              "isCorrect": false
+            },
+            {
+              "text": "-48",
+              "isCorrect": false
+            },
+            {
+              "text": "-78",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver esta expresión, primero resolvemos el paréntesis y luego multiplicamos por 7, finalmente restamos a 15."
+        },
+        {
+          "id": 4,
+          "question": "Al simplificar la expresión 20(-4-1)-13(-8+2) se obtiene:",
+          "options": [
+            {
+              "text": "22",
+              "isCorrect": false
+            },
+            {
+              "text": "178",
+              "isCorrect": false
+            },
+            {
+              "text": "-178",
+              "isCorrect": false
+            },
+            {
+              "text": "-22",
+              "isCorrect": false
+            },
+            {
+              "text": "-12",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver esta expresión, primero resolvemos los paréntesis, luego multiplicamos y finalmente realizamos la resta."
+        }
+      ]
+    }
+  ]
+}
