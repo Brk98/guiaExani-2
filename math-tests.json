@@ -40,7 +40,7 @@
             },
             {
               "text": "\\sqrt{5}",
-              "isCorrect": false
+              "isCorrect": true
             },
             {
               "text": "-\\frac{1}{2}",
@@ -71,7 +71,7 @@
             },
             {
               "text": "78",
-              "isCorrect": false
+              "isCorrect": true
             },
             {
               "text": "-48",
@@ -102,7 +102,7 @@
             },
             {
               "text": "-22",
-              "isCorrect": false
+              "isCorrect": true
             },
             {
               "text": "-12",
@@ -110,6 +110,978 @@
             }
           ],
           "explanation": "Para resolver esta expresión, primero resolvemos los paréntesis, luego multiplicamos y finalmente realizamos la resta."
+        },
+        {
+          "id": 5,
+          "question": "¿Cuál es el resultado de simplificar la expresión, 3-2[3(-1)+(-4)]?",
+          "options": [
+            {
+              "text": "-17",
+              "isCorrect": false
+            },
+            {
+              "text": "5",
+              "isCorrect": false
+            },
+            {
+              "text": "-11",
+              "isCorrect": false
+            },
+            {
+              "text": "11",
+              "isCorrect": false
+            },
+            {
+              "text": "17",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Para resolver esta expresión, primero resolvemos lo que está dentro del paréntesis, luego el corchete, y finalmente realizamos la resta."
+        },
+        {
+          "id": 6,
+          "question": "¿Entre que letras está la ubicación del número: -\\frac{15}{13}?<div class='number-line-container'><div class='number-line'><div class='arrow-left'></div><div class='arrow-right'></div><div class='marks'><span>-2</span><span>-1</span><span>0</span><span>1</span><span>2</span></div><div class='points'><div class='point' style='left: 0%' title='A'>A</div><div class='point' style='left: 25%' title='B'>B</div><div class='point' style='left: 50%' title='C'>C</div><div class='point' style='left: 75%' title='D'>D</div><div class='point' style='left: 100%' title='E'>E</div></div></div></div>",
+          "options": [
+            {
+              "text": "A y B",
+              "isCorrect": true
+            },
+            {
+              "text": "B y C",
+              "isCorrect": false
+            },
+            {
+              "text": "B y D",
+              "isCorrect": false
+            },
+            {
+              "text": "C y D",
+              "isCorrect": false
+            },
+            {
+              "text": "D y E",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para ubicar una fracción en la recta numérica, podemos dividir 15 entre 13, lo cual nos da aproximadamente 1.15, que se encuentra entre los puntos C (0) y D (1)."
+        },
+        {
+          "id": 7,
+          "question": "Si a es un número donde a < 0 entonces:",
+          "options": [
+            {
+              "text": "\\frac{1}{a} > 0",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{1}{a} < 0",
+              "isCorrect": true
+            },
+            {
+              "text": "\\frac{1}{a} = 0",
+              "isCorrect": false
+            },
+            {
+              "text": "a > 0",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{1}{a} = 1",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Cuando dividimos 1 entre un número negativo, el resultado es un número negativo."
+        },
+        {
+          "id": 8,
+          "question": "El inverso de -10 es:",
+          "options": [
+            {
+              "text": "-\\frac{1}{10}",
+              "isCorrect": true
+            },
+            {
+              "text": "10",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{1}{10}",
+              "isCorrect": false
+            },
+            {
+              "text": "-10",
+              "isCorrect": false
+            },
+            {
+              "text": "0",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "El inverso multiplicativo de un número es 1 dividido entre ese número."
+        },
+        {
+          "id": 9,
+          "question": "¿Qué número es mayor que -50?",
+          "options": [
+            {
+              "text": "-60",
+              "isCorrect": false
+            },
+            {
+              "text": "-80",
+              "isCorrect": false
+            },
+            {
+              "text": "-70",
+              "isCorrect": false
+            },
+            {
+              "text": "-40",
+              "isCorrect": true
+            },
+            {
+              "text": "-90",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para comparar números negativos, recuerda que cuanto más lejos está un número de cero en la dirección negativa, menor es su valor."
+        },
+        {
+          "id": 10,
+          "question": "¿La expresión de desigualdad correcta es?",
+          "options": [
+            {
+              "text": "-\\frac{2}{3} < -\\frac{4}{5}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{2}{9} > -\\frac{1}{6}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{7}{4} < -\\frac{1}{2}",
+              "isCorrect": true
+            },
+            {
+              "text": "-\\frac{9}{2} > \\frac{1}{8}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{5}{4} < \\frac{7}{9}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para comparar fracciones con diferentes denominadores, es útil convertirlas a un denominador común o a decimales para determinar cuál es mayor o menor."
+        },
+        {
+          "id": 11,
+          "question": "¿Qué números de la siguiente tabla son divisibles entre nueve?<div class='table-wrapper'><table class='styled-table'><tr><td>A</td><td>702</td><td>F</td><td>954</td><td>K</td><td>101</td><td>P</td><td>95 481</td></tr><tr><td>B</td><td>425</td><td>G</td><td>271</td><td>L</td><td>529</td><td>Q</td><td>85 788</td></tr><tr><td>C</td><td>308</td><td>H</td><td>81</td><td>M</td><td>2 700</td><td>R</td><td>15 203</td></tr><tr><td>D</td><td>179</td><td>I</td><td>413</td><td>N</td><td>3 504</td><td>S</td><td>12 006</td></tr><tr><td>E</td><td>873</td><td>J</td><td>360</td><td>O</td><td>2 708</td><td>T</td><td>24 210</td></tr></table></div>",
+          "options": [
+            {
+              "text": "A, C, D, G, I, J, L, O, S, T",
+              "isCorrect": false
+            },
+            {
+              "text": "B, C, E, G, H, J, N, O, R, S",
+              "isCorrect": false
+            },
+            {
+              "text": "A, E, F, H, J, M, P, Q, S, T",
+              "isCorrect": false
+            },
+            {
+              "text": "A, B, D, F, H, J, K, L, O, T",
+              "isCorrect": true
+            },
+            {
+              "text": "A, C, F, I, N, P, Q, R, S, T",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para determinar si un número es divisible entre 9, la suma de sus dígitos debe ser divisible entre 9."
+        },
+        {
+          "id": 12,
+          "question": "Encuentra el m.c.m. y M.C.D. de los siguientes números:<br><br>a. 120, 60, 30<br>b. 48, 24, 12, 6<br>c. 35, 70, 5<br>d. 15, 30, 45<br>e. 25, 30, 70",
+          "options": [
+            {
+              "text": "a: 60 y 30,     b: 12 y 6,     c: 35 y 70,     d: 30 y 45,     e: 70 y 25",
+              "isCorrect": false
+            },
+            {
+              "text": "a: 120 y 60,    b: 48 y 24,    c: 5 y 70,      d: 45 y 30,     e: 25 y 70",
+              "isCorrect": false
+            },
+            {
+              "text": "a: 60 y 120,    b: 24 y 48,    c: 5 y 35,      d: 15 y 30,     e: 70 y 5",
+              "isCorrect": false
+            },
+            {
+              "text": "a: 120 y 30,    b: 48 y 6,     c: 70 y 5,      d: 90 y 15,     e: 1050 y 5",
+              "isCorrect": false
+            },
+            {
+              "text": "a: 30 y 120,    b: 6 y 24,     c: 70 y 35,     d: 15 y 45,     e: 1050 y 25",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para encontrar el M.C.D. (máximo común divisor) y el m.c.m. (mínimo común múltiplo) de un conjunto de números, podemos usar la descomposición en factores primos."
+        },
+        {
+          "id": 13,
+          "question": "¿El resultado de la operación \\frac{7}{12}+\\frac{5}{18}+\\frac{2}{9} es?",
+          "options": [
+            {
+              "text": "\\frac{13}{18}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{38}{36}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{13}{12}",
+              "isCorrect": true
+            },
+            {
+              "text": "\\frac{40}{36}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{11}{12}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para sumar fracciones con diferentes denominadores, primero debemos encontrar un denominador común y luego sumar los numeradores."
+        },
+        {
+          "id": 14,
+          "question": "¿El resultado de la operación \\frac{7}{12}-\\frac{5}{9}+\\frac{13}{18} es?",
+          "options": [
+            {
+              "text": "\\frac{28}{36}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{28}{36}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{3}{4}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{15}{36}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{3}{4}",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Para operar con fracciones con diferentes denominadores, primero debemos encontrar un denominador común, luego realizar las operaciones de suma y resta según corresponda."
+        },
+        {
+          "id": 15,
+          "question": "¿El resultado de la operación \\frac{22}{24}\\left(-\\frac{16}{44}\\right) es?",
+          "options": [
+            {
+              "text": "-1",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{1}{3}",
+              "isCorrect": true
+            },
+            {
+              "text": "-\\frac{2}{3}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{1}{3}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{1}{6}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para multiplicar fracciones, multiplicamos los numeradores entre sí y los denominadores entre sí, luego simplificamos el resultado. El signo negativo se mantiene en el resultado."
+        },
+        {
+          "id": 16,
+          "question": "¿Al simplificar la expresión \\frac{3+\\frac{1}{2}}{3-\\frac{1}{2}} se obtiene?",
+          "options": [
+            {
+              "text": "3",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{5}{7}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{9}{10}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{7}{5}",
+              "isCorrect": true
+            },
+            {
+              "text": "1",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para simplificar esta expresión, primero convertimos las fracciones mixtas a fracciones impropias, luego realizamos la división."
+        },
+        {
+          "id": 17,
+          "question": "¿Al simplificar la expresión \\frac{\\frac{1}{4}+\\frac{1}{2}}{\\frac{1}{4}-\\frac{1}{2}} se obtiene?",
+          "options": [
+            {
+              "text": "3",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{1}{3}",
+              "isCorrect": false
+            },
+            {
+              "text": "-\\frac{1}{3}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{2}{3}",
+              "isCorrect": false
+            },
+            {
+              "text": "-3",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Para simplificar esta expresión, primero encontramos un denominador común en el numerador y denominador, luego realizamos las operaciones y finalmente simplificamos el resultado."
+        },
+        {
+          "id": 18,
+          "question": "La expresión \\left(12^2\\right)^2 es equivalente a:",
+          "options": [
+            {
+              "text": "12 \\times 2 \\times 2",
+              "isCorrect": false
+            },
+            {
+              "text": "(12)^2 \\times (12)^2",
+              "isCorrect": true
+            },
+            {
+              "text": "12",
+              "isCorrect": false
+            },
+            {
+              "text": "(12 \\times 2)(12 \\times 2)",
+              "isCorrect": false
+            },
+            {
+              "text": "(12)^2 \\times 2",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver potencias de potencias, se multiplican los exponentes."
+        },
+        {
+          "id": 19,
+          "question": "La expresión \\sqrt{x} es igual a:",
+          "options": [
+            {
+              "text": "x^{\\frac{1}{2}}",
+              "isCorrect": true
+            },
+            {
+              "text": "x^2",
+              "isCorrect": false
+            },
+            {
+              "text": "x^{-\\frac{1}{2}}",
+              "isCorrect": false
+            },
+            {
+              "text": "x^{-2}",
+              "isCorrect": false
+            },
+            {
+              "text": "x",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "La raíz cuadrada de un número es equivalente a elevar ese número a la potencia ½."
+        },
+        {
+          "id": 20,
+          "question": "Si tenemos \\left(4^2\\right)^2 en que inciso encontramos una expresión igual.",
+          "options": [
+            {
+              "text": "4^2",
+              "isCorrect": false
+            },
+            {
+              "text": "2^2",
+              "isCorrect": false
+            },
+            {
+              "text": "4^8",
+              "isCorrect": false
+            },
+            {
+              "text": "4^6",
+              "isCorrect": false
+            },
+            {
+              "text": "2^8",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Para resolver potencias de potencias, multiplicamos los exponentes y mantenemos la base."
+        },
+        {
+          "id": 21,
+          "question": "La expresión (81)^{\\frac{2}{4}} es igual a:",
+          "options": [
+            {
+              "text": "\\frac{243}{162}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{9}{81}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{81}{9}",
+              "isCorrect": true
+            },
+            {
+              "text": "\\frac{243}{9}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{27}{243}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver una potencia fraccionaria, primero simplificamos la fracción del exponente y luego aplicamos la potencia resultante."
+        },
+        {
+          "id": 22,
+          "question": "Al simplificar la raíz cuadrada de 160 encontramos que es igual a:",
+          "options": [
+            {
+              "text": "4\\sqrt{10}",
+              "isCorrect": true
+            },
+            {
+              "text": "2\\sqrt{10}",
+              "isCorrect": false
+            },
+            {
+              "text": "10\\sqrt{2}",
+              "isCorrect": false
+            },
+            {
+              "text": "4\\sqrt{5}",
+              "isCorrect": false
+            },
+            {
+              "text": "10\\sqrt{4}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para simplificar una raíz cuadrada, debemos encontrar el mayor factor cuadrado perfecto y separarlo del resto del radicando."
+        },
+        {
+          "id": 23,
+          "question": "Si tenemos la raíz cuadrada de x y como resultado exacto da 18 ¿Cuál es el valor de x?",
+          "options": [
+            {
+              "text": "El doble de 18",
+              "isCorrect": false
+            },
+            {
+              "text": "El cuadrado de 18",
+              "isCorrect": true
+            },
+            {
+              "text": "El tercio de 18",
+              "isCorrect": false
+            },
+            {
+              "text": "La mitad de 18",
+              "isCorrect": false
+            },
+            {
+              "text": "La potencia cuarta de 18",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Si la raíz cuadrada de un número es igual a 18, entonces ese número debe ser el cuadrado de 18."
+        },
+        {
+          "id": 24,
+          "question": "Un agricultor cosechó en su parcela la producción de naranja, obteniendo un total de 3200 costales con un peso de 40 kg. cada uno ¿Cuál fue el peso total en kg de su producción?",
+          "options": [
+            {
+              "text": "1280",
+              "isCorrect": false
+            },
+            {
+              "text": "800",
+              "isCorrect": false
+            },
+            {
+              "text": "12800",
+              "isCorrect": false
+            },
+            {
+              "text": "80",
+              "isCorrect": false
+            },
+            {
+              "text": "128000",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Para encontrar el peso total, multiplicamos el número de costales por el peso de cada costal."
+        },
+        {
+          "id": 25,
+          "question": "Si se vende un caballo en $84, ganando $18,¿Cuánto había costado?",
+          "options": [
+            {
+              "text": "66",
+              "isCorrect": true
+            },
+            {
+              "text": "35",
+              "isCorrect": false
+            },
+            {
+              "text": "69",
+              "isCorrect": false
+            },
+            {
+              "text": "99",
+              "isCorrect": false
+            },
+            {
+              "text": "20",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para encontrar el costo original, restamos la ganancia del precio de venta."
+        },
+        {
+          "id": 26,
+          "question": "Dos hombres realizan una obra por $60 y trabajan durante 5 días. Uno recibe un jornal de $4 diarios. ¿Cuál es el jornal del otro?",
+          "options": [
+            {
+              "text": "$10",
+              "isCorrect": false
+            },
+            {
+              "text": "$12",
+              "isCorrect": false
+            },
+            {
+              "text": "$14",
+              "isCorrect": false
+            },
+            {
+              "text": "$8",
+              "isCorrect": true
+            },
+            {
+              "text": "$15",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para encontrar el jornal del segundo trabajador, debemos restar del total el pago del primer trabajador y dividir entre los días trabajados."
+        },
+        {
+          "id": 27,
+          "question": "De la central camionera parten diariamente 725 autobuses con 42 pasajeros cada uno. Si durante 15 días se mantuvo la misma demanda de pasajeros ¿Cuántas personas salieron de dicha central?",
+          "options": [
+            {
+              "text": "456,570",
+              "isCorrect": false
+            },
+            {
+              "text": "654,750",
+              "isCorrect": false
+            },
+            {
+              "text": "564,750",
+              "isCorrect": false
+            },
+            {
+              "text": "456,750",
+              "isCorrect": true
+            },
+            {
+              "text": "456,057",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para calcular el total de pasajeros, multiplicamos el número de autobuses por el número de pasajeros por autobús y por el número de días."
+        },
+        {
+          "id": 28,
+          "question": "Rosa tiene una tienda de mascotas y vende perritos, hay 15 french que cuestan $380 c/u, 10 rot wailler que cuestan $275 c/u, 5 cocker spanish que cuestan $315 c/u. ¿Cuánto ganaría si vende 3 cocker y 8 french?, y ¿Cuánto ganaría si vendieran todos los perritos?",
+          "options": [
+            {
+              "text": "$3985, $10,025",
+              "isCorrect": true
+            },
+            {
+              "text": "$3654, $10,00",
+              "isCorrect": false
+            },
+            {
+              "text": "$3645, $10,055",
+              "isCorrect": false
+            },
+            {
+              "text": "$3456, $10,250",
+              "isCorrect": false
+            },
+            {
+              "text": "$3564, $10,052",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para calcular las ganancias, multiplicamos el precio de cada tipo de perro por la cantidad vendida y sumamos los resultados. Para el total, multiplicamos el precio de cada tipo por su cantidad total y sumamos todo."
+        },
+        {
+          "id": 29,
+          "question": "Julio compró 25 pelotas de $14 c/u, 13 camioncitos de $12.50 c/u y 12 muñecas de $10 c/u, pagó con dos billetes de $500 ¿Cuánto fue el total pagado por los juguetes y cuanto le dieron de cambio?",
+          "options": [
+            {
+              "text": "total $367.50, cambio $632.50",
+              "isCorrect": false
+            },
+            {
+              "text": "total $632.50, cambio $367.50",
+              "isCorrect": true
+            },
+            {
+              "text": "total $512.50, cambio $487.50",
+              "isCorrect": false
+            },
+            {
+              "text": "total $487.50, cambio $512.50",
+              "isCorrect": false
+            },
+            {
+              "text": "total $650.00, cambio $350.00",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver este problema, multiplicamos cada cantidad de juguetes por su precio respectivo, sumamos los totales y restamos del pago total (dos billetes de $500)."
+        },
+        {
+          "id": 30,
+          "question": "Un depósito cilíndrico para almacenar agua, mide 45 m. de altura y de radio de su base es igual a 2 m. ¿Cuántos litros de agua aproximadamente se requieren para llenar a su máxima capacidad el depósito?",
+          "options": [
+            {
+              "text": "655,486",
+              "isCorrect": false
+            },
+            {
+              "text": "565,487",
+              "isCorrect": true
+            },
+            {
+              "text": "565,684",
+              "isCorrect": false
+            },
+            {
+              "text": "56,846,767",
+              "isCorrect": false
+            },
+            {
+              "text": "556,846,767",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para calcular el volumen de un cilindro, usamos la fórmula V = πr²h, donde r es el radio y h es la altura. Luego convertimos el resultado a litros."
+        },
+        {
+          "id": 31,
+          "question": "Un atleta camina en la 1ra. hora 8\\frac{3}{4} km., en la 2da. hora 7\\frac{2}{3} km, en la 3ra. hora 6\\frac{5}{8} km y en la 4ta. hora. 5\\frac{1}{2}. ¿Cuál es la longitud total recorrida?",
+          "options": [
+            {
+              "text": "26\\frac{13}{24}",
+              "isCorrect": false
+            },
+            {
+              "text": "28\\frac{24}{13}",
+              "isCorrect": false
+            },
+            {
+              "text": "24\\frac{13}{28}",
+              "isCorrect": false
+            },
+            {
+              "text": "28\\frac{13}{24}",
+              "isCorrect": true
+            },
+            {
+              "text": "24\\frac{28}{13}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para encontrar la distancia total, sumamos las distancias recorridas en cada hora, convirtiendo las fracciones mixtas a un denominador común cuando sea necesario."
+        },
+        {
+          "id": 32,
+          "question": "Toño compró una caja de galletas que contiene 20 paquetes con 6 galletas c/u , invitó a sus amigos Julian, Paco y Judith les dio igual cantidad de paquetes él se quedó con 30 galletas ¿Cuántos paquetes le dio a cada uno?",
+          "options": [
+            {
+              "text": "5 paquetes",
+              "isCorrect": true
+            },
+            {
+              "text": "4 paquetes",
+              "isCorrect": true
+            },
+            {
+              "text": "6 paquetes",
+              "isCorrect": false
+            },
+            {
+              "text": "7 paquetes",
+              "isCorrect": false
+            },
+            {
+              "text": "8 paquetes",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver este problema, primero calculamos el total de galletas (20 paquetes × 6 galletas = 120 galletas), luego restamos las 30 galletas que se quedó Toño (90 galletas restantes) y dividimos entre los 3 amigos (30 galletas cada uno), finalmente dividimos entre 6 para obtener el número de paquetes."
+        },
+        {
+          "id": 33,
+          "question": "La proporción equivalente a 72:18 es:",
+          "options": [
+            {
+              "text": "64:16",
+              "isCorrect": true
+            },
+            {
+              "text": "65:13",
+              "isCorrect": false
+            },
+            {
+              "text": "57:45",
+              "isCorrect": false
+            },
+            {
+              "text": "34:68",
+              "isCorrect": false
+            },
+            {
+              "text": "30:10",
+              "isCorrect": true
+            }
+          ],
+          "explanation": "Para encontrar proporciones equivalentes, simplificamos la proporción original dividiendo ambos números por su máximo común divisor."
+        },
+        {
+          "id": 34,
+          "question": "666 minutos es __________ que 1/14 de semana, 666 horas es__________ que 28 días",
+          "options": [
+            {
+              "text": "más tiempo – menos tiempo",
+              "isCorrect": false
+            },
+            {
+              "text": "menos tiempo – más tiempo",
+              "isCorrect": false
+            },
+            {
+              "text": "menos tiempo – menos tiempo",
+              "isCorrect": true
+            },
+            {
+              "text": "más tiempo – igual tiempo",
+              "isCorrect": false
+            },
+            {
+              "text": "más tiempo – más tiempo",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para comparar tiempos, convertimos todas las unidades a la misma medida (minutos u horas) y luego comparamos los valores resultantes."
+        },
+        {
+          "id": 35,
+          "question": "Don Paco compró un motor en $10,483.70, si éste tenía el 18% de descuento, ¿Cuál era el precio original del motor?",
+          "options": [
+            {
+              "text": "$8,884.50",
+              "isCorrect": false
+            },
+            {
+              "text": "$12,366.66",
+              "isCorrect": false
+            },
+            {
+              "text": "$12,370.00",
+              "isCorrect": false
+            },
+            {
+              "text": "$12,785.00",
+              "isCorrect": true
+            },
+            {
+              "text": "$13,660.00",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para encontrar el precio original cuando conocemos el precio con descuento, dividimos el precio con descuento entre (1 - porcentaje de descuento)."
+        },
+        {
+          "id": 36,
+          "question": "Los resultados de un examen de matemáticas de un grupo de segundo de secundaria fueron los siguientes: \\frac{1}{8} obtuvieron 10 de calificación, \\frac{1}{4} obtuvo 9, \\frac{1}{3} sacaron 8 ¿Qué fracción del grupo obtuvo menos de 8 de calificación?",
+          "options": [
+            {
+              "text": "\\frac{24}{7}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{3}{12}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{7}{24}",
+              "isCorrect": true
+            },
+            {
+              "text": "\\frac{4}{27}",
+              "isCorrect": false
+            },
+            {
+              "text": "\\frac{3}{21}",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver este problema, sumamos las fracciones de estudiantes que obtuvieron 8 o más (\\frac{1}{8} + \\frac{1}{4} + \\frac{1}{3}) y restamos de 1 para obtener la fracción que obtuvo menos de 8."
+        },
+        {
+          "id": 37,
+          "question": "Rodolfo acompaña a su mamá al mercado, cargó una bolsa con el siguiente mandado: 1\\frac{1}{2} kg de carne, \\frac{3}{4} kg. de queso y 1\\frac{3}{4} kg de fruta, pero su mamá se ofrece ayudarlo con 1 kg. de fruta ¿Cuánto cargó en total Rodolfo?",
+          "options": [
+            {
+              "text": "3 kg",
+              "isCorrect": true
+            },
+            {
+              "text": "4 kg",
+              "isCorrect": false
+            },
+            {
+              "text": "3\\frac{3}{4} kg",
+              "isCorrect": false
+            },
+            {
+              "text": "5 kg",
+              "isCorrect": false
+            },
+            {
+              "text": "4\\frac{1}{2} kg",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver este problema, sumamos el peso de la carne (1\\frac{1}{2} kg), el queso (\\frac{3}{4} kg) y la fruta que cargó Rodolfo (\\frac{3}{4} kg, ya que su mamá llevó 1 kg del total de 1\\frac{3}{4} kg)."
+        },
+        {
+          "id": 38,
+          "question": "En una escuela hay 960 alumnos, de los cuales 336 son hombres ¿Cuál es el porcentaje de mujeres?",
+          "options": [
+            {
+              "text": "65%",
+              "isCorrect": true
+            },
+            {
+              "text": "35%",
+              "isCorrect": false
+            },
+            {
+              "text": "75%",
+              "isCorrect": false
+            },
+            {
+              "text": "45%",
+              "isCorrect": false
+            },
+            {
+              "text": "46%",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para calcular el porcentaje de mujeres, primero restamos el número de hombres del total (960 - 336 = 624 mujeres) y luego calculamos el porcentaje (624/960 × 100 = 65%)."
+        },
+        {
+          "id": 39,
+          "question": "Juanito junto dinero para comprar una bicicleta. Su tío le dio $50 con los cuales compró una pelota que le costó $ 10, su tía le dio $100 con los cuáles compro una bolsa de canicas que le costó $6, colores para dibujar, que le costaron $15, un chocolate de $ 7 y una paleta de $ 2. Su mamá le dio $ 200 y su papá $300 ¿Cuánto le falta para poder comprar una bicicleta si ésta cuesta $1,625?",
+          "options": [
+            {
+              "text": "$1005",
+              "isCorrect": false
+            },
+            {
+              "text": "$1150",
+              "isCorrect": false
+            },
+            {
+              "text": "$1010.50",
+              "isCorrect": false
+            },
+            {
+              "text": "$1015",
+              "isCorrect": true
+            },
+            {
+              "text": "$1105",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para resolver este problema, sumamos todo el dinero recibido ($50 + $100 + $200 + $300 = $650), restamos los gastos ($10 + $6 + $15 + $7 + $2 = $40), y luego restamos lo que tiene ($610) del precio de la bicicleta ($1,625 - $610 = $1,015)."
+        },
+        {
+          "id": 40,
+          "question": "En la ciudad las temperaturas registradas durante una semana fueron las siguiente 1.2°, 2°, 3.1°, 0°, 3.5° y 1.3°. ¿Cuál es el promedio de temperaturas?",
+          "options": [
+            {
+              "text": "5.81°",
+              "isCorrect": false
+            },
+            {
+              "text": "8.15°",
+              "isCorrect": false
+            },
+            {
+              "text": "1.85°",
+              "isCorrect": true
+            },
+            {
+              "text": "18.5°",
+              "isCorrect": false
+            },
+            {
+              "text": "15.8°",
+              "isCorrect": false
+            }
+          ],
+          "explanation": "Para calcular el promedio de temperaturas, sumamos todas las temperaturas (1.2° + 2° + 3.1° + 0° + 3.5° + 1.3° = 11.1°) y dividimos entre el número de días (11.1° ÷ 6 = 1.85°)."
         }
       ]
     }
